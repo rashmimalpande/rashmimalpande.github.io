@@ -44,3 +44,46 @@ body{
     color: #fff;
     font-family: 'Lato', sans-serif;
 }
+
+.about{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+}
+
+.about .row{
+    padding-top: 100px;
+}
+.about h2{
+    font-family: 'Lato', sans-serif;
+    color: #333333;
+    font-style: bold;
+}
+
+
+.heading{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.heading::after{
+    content: "";
+    display: flex;
+    width: 100px;
+    height: 1px;
+    background: #333333;
+    margin: 20px 0 40px;
+}
+
+.text{
+    font-family: 'Lato', sans-serif;
+    color: #333333;
+    font-size: 20px;
+    font-weight: 100;
+}
+.profile{
+    border: 0.5px;
+    border-radius: 100%;
+    height: 500px;
+    width: 500px;
+}
