@@ -7,15 +7,20 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:Light Italic,Regular,Bold" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easypiechart.min.js">
+    </script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
 </head>
 <body>
 
     <section id="intro" class="intro">
-        <div class="overlay">
+        <div class="overlay"></div>
         <div class="content">
             <div class="container clearfix">
                 <div class="row">
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-md-8 col-md-offset-2 col-sm-12">
                         <p>hello, nice to meet you!</p>
                         <h2>I am Rashmi. And this is my Portfolio. </h2>
                     </div>
@@ -23,6 +28,24 @@
             </div>
         </div>
     </section>
+
+    <div id= "nav-sticky-bar" class="sticky-bar" style="height: 50px;">
+        <header class="header">
+            <div class="sticky-wrapper">
+                <nav class="navbar navbar-default">
+                    <div class="container">
+                        <div id="navigation" class="navbar-collapse navbar-center">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#intro">Home</a></li>
+                                <li><a href="#intro">About Me</a></li>
+                                <li><a href="#intro">Skills</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
 
     <section id="about" class="about">
         <div class="container">
@@ -34,8 +57,60 @@
                     <p class="text">Delightful unreserved impossible few estimating men favourable see entreaties. She propriety immediate was improving. He or entrance humoured likewise moderate. Much nor game son say feel. Fat make met can must form into gate. Me we offending prevailed discovery. </p>
                 </div>
 
-                <div class="col-md-5 col-md-offset-1">
-                    <img src="yellowstone-national-park-1581879_1280.jpg" class="profile" />
+                <div class="col-md-5 col-md-offset-1 picture">
+                    <h2 class="heading">Skills </h2>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-2 skill">
+                    <div class="chart skill-progress" data-percent = "50" style="width: 120px; height: 120px; line-height: 80px;" >50%
+                        <canvas width="150" height="150" style="width: 120px; height:120px;"></canvas>
+                    </div>
+                    <h4>HTML/CSS</h4>
+                </div>
+
+                <div class="col-md-2 skill">
+                    <div class="chart skill-progress" data-percent = "40"
+                    style="width: 120px; height: 120px; line-height: 80px;">40%
+                        <canvas width="150" height="150" style="width: 120px; height:120px;"></canvas>
+                    </div>
+                    <h4>Python</h4>
+                </div>
+
+                <<div class="col-md-2 skill">
+                    <div class="chart skill-progress" data-percent = "60" style="width: 120px; height: 120px; line-height: 80px;">60%
+                        <canvas width="150" height="150" style="width: 120px; height:120px;"></canvas>
+                    </div>
+                    <h4>Java</h4>
+                </div>
+
+                <div class="col-md-2 skill">
+                    <div class="chart skill-progress" data-percent = "40" style="width: 120px; height: 120px; line-height: 80px;">40%
+                        <canvas width="150" height="150" style="width: 120px; height:120px;"></canvas>
+                    </div>
+                    <h4>Android</h4>
+                </div>
+
+                <div class="col-md-2 skill">
+                    <div class="chart skill-progress" data-percent = "30" style="width: 120px; height: 120px; line-height: 80px;">30%
+                        <canvas width="150" height="150" style="width: 120px; height:120px;"></canvas>
+                    </div>
+                    <h4>Ruby on Rails</h4>
+                </div>
+
+                <div class="col-md-2 skill">
+                    <div class="chart skill-progress" data-percent = "60" style="width: 120px; height: 120px; line-height: 80px;">60%
+                        <canvas width="150" height="150" style="width: 120px; height:120px;"></canvas>
+                    </div>
+                    <h4>Indesign</h4>
                 </div>
 
             </div>
