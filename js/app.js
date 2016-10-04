@@ -4,7 +4,7 @@ $(document).ready(function(){
     function setUpPie(){
         $('.chart').easyPieChart({
              //your configuration goes here
-             barColor: '#74C7D5',
+             barColor: '#f26419',
              trackColor: '#cccccc',
              scaleColor: false,
              lineWidth: 5,
@@ -12,10 +12,21 @@ $(document).ready(function(){
          });
     }
 
+    var navOffset = $(".header").offset().top;
+    
+    $(window).scroll(function(){
+        var scrollPos = $(Window).scrollTop();
 
-     $(".navbar-default").sticky( {topSpacing: 0} );
+        if(scrollPos >= navOffset){
+            $(".header").addClass("fixed")
+        }
+        else{
+            $(".header").removeClass("fixed")
+        }
+
+    });
 
 
-
+    
 
 });

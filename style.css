@@ -61,6 +61,14 @@ body{
     font-style: bold;
 }
 
+.picture{
+    height: 500px;
+    border-radius: 100%;
+    background: url('img/code.jpg');
+    border: 10px solid #e7e7e7;
+    border-width: 10px;
+
+}
 
 .heading{
     margin-bottom: 20px;
@@ -130,8 +138,7 @@ body{
     border-color: #e7e7e7;
     border-radius: 0;
     width: 100%;
-    background: #fff;
-    z-index: 1003;
+    background-color: #fff;
 
 }
 
@@ -142,15 +149,21 @@ body{
     color: #333;
     font-size: 1em;
     text-transform: uppercase;
-    color: #74C7D5;
+    color: #f26419;
 }
 
 .navbar.navbar-default .navbar-nav li a:hover{
-    background-color: #74C7D5;
+    background-color: #f26419;
     color: #fff;
 }
 
-.navbar.navbar-default .navbar-nav li:active{
-    color: #74C7D5;
+
+.header{
+    width: 100%;
+    z-index: 9999;
 }
 
+.fixed{
+    position: fixed;
+    top: 0;
+}
