@@ -7,15 +7,15 @@ $(document).ready(function(){
              barColor: '#f26419',
              trackColor: '#cccccc',
              scaleColor: false,
-             lineWidth: 5,
+             lineWidth: 6,
              size: 120
          });
     }
 
-    var navOffset = $(".header").offset().top;
+    var navOffset = $(".header").offset().top; /* position of eader from the top */
     
     $(window).scroll(function(){
-        var scrollPos = $(Window).scrollTop();
+        var scrollPos = $(Window).scrollTop(); /* scroll position of window*/
 
         if(scrollPos >= navOffset){
             $(".header").addClass("fixed")
@@ -26,7 +26,7 @@ $(document).ready(function(){
 
     });
 
-
     
+
 
 });
