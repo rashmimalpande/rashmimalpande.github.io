@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    
+
     setUpPie();
     function setUpPie(){
         $('.chart').easyPieChart({
@@ -12,10 +14,11 @@ $(document).ready(function(){
          });
     }
 
+
     var navOffset = $(".header").offset().top; /* position of eader from the top */
     
     $(window).scroll(function(){
-        var scrollPos = $(Window).scrollTop(); /* scroll position of window*/
+        var scrollPos = $(window).scrollTop(); /* scroll position of window*/
 
         if(scrollPos >= navOffset){
             $(".header").addClass("fixed")
@@ -26,7 +29,15 @@ $(document).ready(function(){
 
     });
 
-    
+     $("#navigation ul li a").click(function(event){
+         var linkHref = $(this).attr('href');
+         
+         $('html, body').animate({
+             scrollTop: $(linkHref).offset().top
+         });
 
+        event.preventDefault();
+    });
+    
 
 });
