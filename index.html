@@ -7,41 +7,40 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:Light Italic,Regular,Bold" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
 </head>
 
 <body>
+
+    <div class="header">
+            <ul>
+                    <li><a href="#intro" class="slider"></a></li><br/>
+                    <li><a href="#about" class="slider"></a></li><br/>
+                    <li><a href="#skills" class="slider"></a></li><br/>
+                    <li><a href="#portfolio" class="slider"></a></li><br/>
+                    <li><a href="#footer" class="slider"></a></li><br/>
+            </ul>
+    </div>
+
+     <!---------------------- Intro Section ------------------------->
+
     <section id="intro" class="intro">
         <div class="overlay"></div>
         <div class="content">
             <div class="container clearfix">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2 col-sm-12">
+                    <div class="col-md-12 col-md-offset-2">
                         <p>hello, nice to meet you!</p>
-                        <h2>I am Rashmi. And this is my Portfolio. </h2>
+                        <h2>I am <span>Rashmi Malpande</span> </h2>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <div id= "nav-sticky-bar" class="sticky-bar" style="height: 50px;">
-        <header class="header">
-                <div class="navbar navbar-default" role="navigation">
-                    <div class="container">
-                        <div id="navigation" class="navbar-collapse">
-                            <ul class="nav navbar-nav">
-                                <li><a href="#intro">Home</a></li>
-                                <li><a href="#about">About Me</a></li>
-                                <li><a href="#skills">Skills</a></li>
-                                <li><a href="#portfolio">Portfolio</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-        </header>
-    </div>
+   
+    <!---------------------- About Section ------------------------->
 
     <section id="about" class="about">
         <div class="container">
@@ -53,13 +52,13 @@
                     <p class="text">Delightful unreserved impossible few estimating men favourable see entreaties. She propriety immediate was improving. He or entrance humoured likewise moderate. Much nor game son say feel. Fat make met can must form into gate. Me we offending prevailed discovery. </p>
                 </div>
 
-                <div class="col-md-5 col-md-offset-1 picture">
-
-                </div>
+                <div class="col-md-5 col-md-offset-1 picture"></div>
 
             </div>
         </div>
     </section>
+
+    <!---------------------- Skills Section ------------------------->
 
     <section id="skills" class="skills">
         <div class="container">
@@ -112,6 +111,8 @@
         </div>
     </section>
 
+     <!---------------------- Portfolio Section ------------------------->
+
     <section id="portfolio" class="portfolio">
         <div class="gallery">
             
@@ -120,28 +121,28 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="project">
-                            <a href="https://github.com/rashmimalpande" target="_blank"><img class="img-responsive" src="img/code.jpg" width="400px" height="400px"></a>
-                            <span>Project Name</span>
+                            <a href="https://codepen.io/rushme/full/ozPPZp" target="_blank"><img class="img-responsive" src="img/random_quote.jpg" width="400px" height="400px"></a>
+                            <h3>Random Quote Machine</h3>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="project">
-                            <a href="https://github.com/rashmimalpande" target="_blank"><img class="img-responsive" src="img/code.jpg" width="400px" height="400px"></a>
-                            <span>Project Name</span>
+                            <a href="https://codepen.io/rushme/full/wzOJpZ" target="_blank"><img class="img-responsive" src="img/wikipedia_viewer.jpg" width="400px" height="400px"></a>
+                            <h3>Wikipedia Viewer</h3>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="project">
-                            <a href="https://github.com/rashmimalpande" target="_blank"><img  class="img-responsive" src="img/code.jpg" width="400px" height="400px"></a>
-                            <span>Project Name</span>
+                            <a href="https://codepen.io/rushme/full/amjgOo" target="_blank"><img  class="img-responsive" src="img/sample_portfolio.jpg" width="400px" height="400px"></a>
+                            <h3>A Portfolio Page</h3>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="project">
-                            <a href="https://github.com/rashmimalpande" target="_blank"><img class="img-responsive" src="img/code.jpg" width="400px" height="400px"></a>
-                            <span>Project Name</span>
+                            <a href="https://github.com/rashmimalpande" target="_blank"><img class="img-responsive" src="img/text_editor.jpg" width="400px" height="400px"></a>
+                            <h3>Text Editor</h3>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -161,11 +162,18 @@
         </div>
     </section>
 
-    <footer class="footer">
+     <!---------------------- Footer Section ------------------------->
+
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="social">   
-                
-                
+                <ul class="text-center">
+                    <li><a href="https://github.com/rashmimalpande" class="button" target="_blank"><i class="fa fa-github-alt"></i></a></li>
+                    <li><a href="https://twitter.com/_rushmee_" class="button" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/rashmimalpande" class="button" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://codepen.io/rushme/" class="button" target="_blank"><i class="fa fa-codepen"></i></a></li>
+                </ul>
+               
             </div>
         </div>
     </footer>
