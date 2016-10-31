@@ -1,20 +1,20 @@
 body{
     width: 100%;
     margin: 0;
-    font-family: "Lato", sans-serif;
+    
 }
 
 .slider {
   width: 15px;
   height: 15px;
-  border: 2px solid #33658a;
+  border: 2px solid #1b9aaa;
   border-radius: 50%;
   position: fixed;
   cursor: pointer;
 }
 
 .slider:hover {
-  background: #33658a;
+  background: #1b9aaa;
 }
 
 .header {
@@ -42,6 +42,7 @@ body{
     background-position: center;
     background-attachment: fixed;
     color: #fff;
+    
 
 }
 .overlay{
@@ -62,20 +63,40 @@ body{
 .intro p{
     font-size: 20px;
     color: #fff;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-style: italic;
+    margin-top: 8px;
+    letter-spacing: 2px;
 }
 
 .intro h2{
     font-size: 80px;
     color: #fff;
-    font-family: 'Lato', sans-serif;
-    
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    padding-top: 3px;
 }
 
-.intro span{
-    font-family: Lato;
-    text-transform: uppercase;
+@media only screen and (max-width: 500px){
+    .intro h2{
+        font-size:50px;
+    }
+   
+}
+
+.line{
+    display: block;
+    width: 400px;
+    height: 5px; 
+    margin: 0 auto;
+    background-color: #fff;   
+}
+
+@media only screen and (max-width: 500px){
+   
+    .line{
+        width:250px;
+    }
 }
 
 .about{
@@ -196,8 +217,25 @@ body{
     opacity: 1;
 }
 
+@media only screen and (max-width: 500px){
+    .project{
+        width: 250px;
+        height: 200px;
+    }
+}
 
-
+@media only screen and (min-width:900px) and (max-width: 1400px){
+    .project{
+        width: 300px;
+        height: 250px;
+        margin: 10px;
+    }
+}
+@media only screen and (max-width: 400px){
+   .gallery{
+       margin: -50px !important;
+   }
+}
 
 
 .footer{
@@ -236,3 +274,4 @@ body{
 .button:hover{
      border-color: #33658a;
 }
+
