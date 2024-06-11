@@ -1,0 +1,58 @@
+{% if site.social-network-links %}
+<ul class="list-inline text-center footer-links">
+
+{%- for network in site.social-network-links -%}
+
+  {%- if network[0] == "github" -%}
+  <li class="list-inline-item">
+    <a href="https://github.com/{{ network[1] }}" title="GitHub">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">GitHub</span>
+   </a>
+  </li>
+  {%- endif -%}
+
+  {%- if network[0] == "codepen" -%}
+  <li class="list-inline-item">
+    <a href="https://codepen.io/{{ network[1] }}" title="Codepen">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-codepen fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Codepen</span>
+   </a>
+  </li>
+  {%- endif -%}
+
+  {%- if network[0] == "twitter" -%}
+  <li class="list-inline-item">
+    <a href="https://twitter.com/{{ network[1] }}" title="Twitter">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Twitter</span>
+   </a>
+  </li>
+  {%- endif -%}
+
+
+  {%- if network[0] == "linkedin" -%}
+  <li class="list-inline-item">
+    <a href="https://linkedin.com/in/{{ network[1] }}" title="LinkedIn">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">LinkedIn</span>
+   </a>
+  </li>
+  {%- endif -%}
+
+{%- endfor -%}
+
+</ul>
+{% endif %}
